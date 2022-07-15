@@ -29,7 +29,6 @@ jobs:
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip3 install poetry 
-        poetry shell
         poetry install requirements.txt
     - name: Test with pytest
       run: |
